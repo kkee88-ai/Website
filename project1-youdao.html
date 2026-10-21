@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>网易有道AI政策研究项目 | 柯月怡作品集</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Noto+Serif+SC:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="assets/interactions.css" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0A2463',
+                        secondary: '#2D3748',
+                        accent: '#3E92CC',
+                        background: '#FFFFFF',
+                        muted: '#718096',
+                        border: '#E2E8F0'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        serif: ['Noto Serif SC', 'Georgia', 'serif']
+                    },
+                }
+            }
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer utilities {
+            .text-balance {
+                text-wrap: balance;
+            }
+            .section-padding {
+                padding: clamp(2rem, 6vw, 4rem) 0;
+            }
+            .container-custom {
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 0 clamp(1.5rem, 5vw, 3rem);
+            }
+        }
+    </style>
+<style>
+        html { scroll-behavior: smooth; }
+    </style>
+<link href="assets/covers.css" rel="stylesheet"/><link href="assets/final-polish.css" rel="stylesheet"/></head>
+<body class="font-sans antialiased bg-white text-gray-900">
+<!-- 图片灯箱 -->
+<div class="lightbox" id="lightbox">
+<span class="close-btn" onclick="closeLightbox()"><i class="fa fa-times"></i></span>
+<img alt="放大查看" id="lightbox-img" src=""/>
+</div>
+<!-- 导航 -->
+<nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-sm border-b border-border/60">
+<div class="container-custom flex justify-between items-center h-16 max-w-7xl">
+<a class="font-serif font-bold text-xl text-primary" href="Index.html">柯月怡</a>
+<a class="text-sm font-medium hover:text-accent transition-colors flex items-center gap-2" href="Index.html#work">
+<i class="fa fa-long-arrow-left"></i> 返回项目列表
+            </a>
+<a class="text-sm text-primary" href="project1-youdao-en.html">EN</a></div>
+</nav>
+<!-- 项目头部 -->
+<header class="pt-32 pb-12 border-b border-border fade-in">
+<div class="container-custom max-w-5xl">
+<span class="text-xs font-medium text-accent mb-3 block">Project 01 · 政府事务 · 2026 – 至今</span>
+<h1 class="font-serif text-[clamp(2rem,5vw,3.5rem)] font-bold text-primary mb-6">网易有道AI政策研究与国家级项目申报</h1>
+<div class="grid md:grid-cols-4 gap-6 text-sm">
+<div>
+<p class="text-muted mb-1">我的角色</p>
+<p class="font-medium">政府事务实习生</p>
+</div>
+<div>
+<p class="text-muted mb-1">项目周期</p>
+<p class="font-medium">2026.09 – 至今</p>
+</div>
+<div>
+<p class="text-muted mb-1">项目类型</p>
+<p class="font-medium">科技政策/合规/项目申报</p>
+</div>
+<div>
+<p class="text-muted mb-1">相关领域</p>
+<p class="font-medium">AI治理/科技合规</p>
+</div>
+</div>
+</div>
+</header>
+<main>
+<section class="section-padding border-b border-border fade-in">
+<div class="container-custom">
+<h2 class="font-serif text-2xl font-bold text-primary mb-4">01 · 项目背景</h2>
+<p class="text-lg text-secondary/80 leading-relaxed">
+                    2026年国内AI产业进入监管规范化阶段，工信部、网信办等部门陆续出台AI服务提供者管理、生成式AI合规等系列政策，直接影响有道AI词典笔、AI耳机、智能学习硬件等核心产品的设计、上线与运营；同时中国互联网协会启动"AI+"典型案例征集，入选项目可获得国家级政策背书与资源支持，是科技企业重要的政策资质。
+                </p>
+</div>
+</section>
+<section class="section-padding border-b border-border fade-in">
+<div class="container-custom">
+<h2 class="font-serif text-2xl font-bold text-primary mb-4">02 · 核心问题</h2>
+<ul class="text-lg text-secondary/80 leading-relaxed space-y-3">
+<li>• AI政策更新频率快、专业度高，业务团队难以快速理解监管要求并落地到产品调整中，存在合规风险</li>
+<li>• 国家级"AI+"项目申报需要整合技术、知识产权、产品、市场、落地案例等多部门材料，时间紧、要求高，缺乏统一协调</li>
+<li>• 广州、杭州两地用户投诉与12345/监管平台反馈分散在不同业务线，缺乏统一台账与跟进机制，容易引发监管处罚</li>
+</ul>
+</div>
+</section>
+<section class="section-padding border-b border-border fade-in">
+<div class="container-custom">
+<h2 class="font-serif text-2xl font-bold text-primary mb-4">03 · 我的职责</h2>
+<ul class="text-lg text-secondary/80 leading-relaxed space-y-3">
+<li>• 独立跟踪国家及广东省、浙江省AI相关政策文件，输出政策影响评估报告，提出产品合规调整建议</li>
+<li>• 作为核心执笔人，撰写有道AI耳机、数字产业基地两个核心产品的"AI+"案例申报材料，协调跨部门收集支撑材料</li>
+<li>• 建立两地监管投诉台账，每日跟进投诉处理进度，对接业务部门完成整改，输出合规风险周报</li>
+</ul>
+</div>
+</section>
+<section class="section-padding border-b border-border fade-in">
+<div class="container-custom">
+<h2 class="font-serif text-2xl font-bold text-primary mb-4">04 · 执行过程</h2>
+<div class="space-y-6 text-lg text-secondary/80 leading-relaxed">
+<p>1. <strong>政策跟踪体系搭建</strong>：建立每日政策监测台账，重点跟踪工信部、网信办、发改委等部门的AI相关文件，从核心要求、影响产品、合规时限、调整建议四个维度形成标准化评估模板，每周输出政策周报同步给产品、技术、法务团队。</p>
+<p>2. <strong>项目申报材料统筹</strong>：研究"AI+"案例申报指南，拆解出技术创新性、落地成效、社会价值、知识产权等12项评分维度，逐一协调技术部拿专利和算法材料、产品部拿功能说明、市场部拿落地案例数据、法务部拿资质证明，汇总相关申报材料并参与文本撰写。</p>
+<p>3. <strong>合规风险闭环管理</strong>：打通广州、杭州两地客服、市场监管、网信部门的投诉反馈渠道，建立统一的投诉跟进台账，按照"投诉接收-派单给业务-跟进整改进度-反馈监管方-归档总结"的流程处理每一起投诉，对高频问题形成风险提示同步给业务端提前优化。</p>
+</div>
+</div>
+</section>
+<section class="section-padding fade-in">
+<div class="container-custom">
+<h2 class="font-serif text-2xl font-bold text-primary mb-4">05 · 收获与反思</h2>
+<div class="space-y-4 text-lg text-secondary/80 leading-relaxed">
+<p>这段经历打破了我之前对政府事务"就是搞关系"的刻板印象，真正理解了科技企业GR的核心价值：既不是生硬地照搬政策要求限制业务发展，也不是不顾规则野蛮生长，而是要成为监管和业务之间的翻译官——把政策语言转化为业务能懂、能执行的具体要求，同时把企业的创新实践包装成政策鼓励的方向，实现双向对齐。</p>
+<p>最大的成长是学会了在多重约束下解决问题：政策有红线、业务有发展需求、时间有限，需要在三者之间找到平衡点，既不能触碰合规底线，也不能过度限制业务创新。</p>
+</div>
+<div class="mt-12 flex justify-between">
+<a class="text-primary font-medium inline-flex items-center gap-2 hover:text-accent transition-colors" href="Index.html#work">
+<i class="fa fa-long-arrow-left"></i> 所有项目
+                    </a>
+<a class="text-primary font-medium inline-flex items-center gap-2 hover:text-accent transition-colors" href="project2-guangzhouaward.html">
+                        下一个项目：广州国际城市创新奖全球传播 <i class="fa fa-long-arrow-right"></i>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- 回到顶部 -->
+<div class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+<i class="fa fa-arrow-up"></i>
+</div>
+<script>
+        function openLightbox(src) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) closeLightbox();
+        });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeLightbox();
+        });
+
+        // 滚动动画
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => entry.isIntersecting && entry.target.classList.add('visible'));
+        }, {threshold: 0.1});
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // 回到顶部
+        const backToTop = document.querySelector('.back-to-top');
+        window.addEventListener('scroll', () => backToTop.classList.toggle('visible', window.scrollY > 500));
+    </script>
+<script src="assets/viewer.js"></script></body>
+</html>

@@ -1,0 +1,474 @@
+html
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Yueyi Ke | Portfolio</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Noto+Serif+SC:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="assets/interactions.css" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0A2463',
+                        secondary: '#2D3748',
+                        accent: '#3E92CC',
+                        background: '#FFFFFF',
+                        muted: '#718096',
+                        border: '#E2E8F0'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        serif: ['Noto Serif SC', 'Georgia', 'serif']
+                    },
+                }
+            }
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer utilities {
+            .text-balance {
+                text-wrap: balance;
+            }
+            .section-padding {
+                padding: clamp(3rem, 8vw, 7rem) 0;
+            }
+            .container-custom {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 clamp(1.5rem, 5vw, 3rem);
+            }
+        }
+    </style>
+<style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+<link href="assets/covers.css" rel="stylesheet"/><link href="assets/final-polish.css" rel="stylesheet"/></head>
+<body class="font-sans antialiased">
+<!-- 图片灯箱 -->
+<div class="lightbox" id="lightbox">
+<span class="close-btn" onclick="closeLightbox()"><i class="fa fa-times"></i></span>
+<img alt="放大查看" id="lightbox-img" src=""/>
+</div>
+<!-- 导航 -->
+<nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-sm border-b border-border/60">
+<div class="container-custom flex justify-between items-center h-16">
+<a class="font-serif font-bold text-xl text-primary" href="#home">Yueyi Ke</a>
+<div class="hidden md:flex items-center gap-8 text-sm font-medium">
+<a class="hover:text-accent transition-colors" href="#work">Selected Projects</a>
+<a class="hover:text-accent transition-colors" href="#experience">Experience</a>
+<a class="hover:text-accent transition-colors" href="#skills">Core Competencies</a>
+<a class="hover:text-accent transition-colors" href="#about">About Me</a>
+<a class="hover:text-accent transition-colors" href="#contact">Contact</a>
+<a class="text-muted hover:text-primary transition-colors" href="Index.html">中文</a>
+<a class="bg-primary text-white px-4 py-2 rounded hover:bg-primary/90 transition-colors" download="Yueyi_Ke_CV_EN.pdf" href="assets/cv/yueyi-ke-cv-en.pdf">Download CV</a>
+</div>
+<button class="md:hidden text-xl">
+<i class="fa fa-bars"></i>
+</button>
+</div>
+</nav>
+<!-- 首页 Hero -->
+<section class="pt-32 pb-20 md:pt-44 md:pb-28" id="home">
+<div class="container-custom grid md:grid-cols-2 gap-12 items-center">
+<div class="order-2 md:order-1">
+<p class="text-accent font-medium mb-3 text-sm tracking-wide">Hi, I'm</p>
+<h1 class="font-serif text-[clamp(2.5rem,6vw,4rem)] font-bold leading-[1.1] text-primary mb-4">Yueyi Ke</h1>
+<h2 class="text-xl md:text-2xl font-medium text-secondary mb-6">Government Affairs · International Communication · Tech Policy</h2>
+<p class="text-lg text-secondary/80 leading-relaxed mb-8 max-w-xl text-balance">A cross-disciplinary bridge builder connecting policy research, content production and cross-cultural communication—helping industry understand policy, bringing Chinese stories to global audiences, and turning complex information into practical value.</p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-primary text-white px-6 py-3 rounded font-medium hover:bg-primary/90 transition-colors" href="#work">View Projects</a>
+<a class="border border-primary text-primary px-6 py-3 rounded font-medium hover:bg-primary/5 transition-colors" href="#about">Learn More</a>
+</div>
+</div>
+<div class="order-1 md:order-2 flex justify-center">
+<!-- 证件照缩小 -->
+<div class="aspect-[4/5] w-64 rounded-xl overflow-hidden border border-border shadow-xl">
+<img alt="柯月怡证件照" class="w-full h-full object-cover" src="assets/portrait.jpg"/>
+</div>
+</div>
+</div>
+</section>
+<!-- 简介预览 -->
+<section class="py-16 border-t border-border">
+<div class="container-custom max-w-3xl">
+<p class="text-accent font-medium mb-3 text-sm tracking-wide">About Me</p>
+<p class="text-xl md:text-2xl leading-relaxed text-secondary/90 font-light">
+                Ranked first in International Politics at Guangdong University of Foreign Studies (GPA 3.96/4.0; National Scholarship recipient), I currently work in Government Affairs at NetEase Youdao, focusing on AI policy research, technology compliance and international communication. My experience spans international organizations, financial media and public policy institutions, with strengths in policy analysis, bilingual content creation and cross-cultural project coordination.
+            </p>
+</div>
+</section>
+<!-- 代表项目 -->
+<section class="section-padding border-t border-border" id="work">
+<div class="container-custom">
+<div class="mb-12">
+<p class="text-accent font-medium mb-3 text-sm tracking-wide">Selected Work</p>
+<h2 class="font-serif text-3xl md:text-4xl font-bold text-primary">Selected Projects</h2>
+</div>
+<!-- 非对称项目网格 -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- 项目1：网易有道GR（2/3宽） -->
+<div class="project-card md:col-span-2 bg-white border border-border rounded-sm overflow-hidden">
+<div class="aspect-[16/9] border-b border-border">
+<div class="project-cover cover-youdao w-full h-full">
+<div class="cover-tag">Project 01 · GOVERNMENT AFFAIRS</div>
+<div class="cover-title">NetEase Youdao AI Policy Research<br/>&amp; National Program Applications</div>
+<div class="cover-meta">2026 – Present</div>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-3">
+<span class="text-xs font-medium text-accent">Project 01 · Government Affairs</span>
+<span class="text-xs text-muted">2026 – Present</span>
+</div>
+<h3 class="font-serif text-xl font-bold mb-3 text-primary">NetEase Youdao AI Policy Research &amp; National Program Applications</h3>
+<p class="text-secondary/80 mb-4 leading-relaxed">Track national and provincial AI policy frameworks and assess their implications for enterprise AI product compliance; lead the drafting of national “AI+” program applications for Youdao AI Earphones and the Digital Industrial Base, consolidating intellectual property, patents and technical qualifications; monitor compliance risks and regulatory complaints in Guangzhou and Hangzhou to support compliant operations.</p>
+<a class="text-primary font-medium inline-flex items-center gap-2 hover:text-accent transition-colors" href="project1-youdao-en.html">
+                            View Project <i class="fa fa-long-arrow-right"></i>
+</a>
+</div>
+</div>
+<!-- 项目2：广州国际城市创新奖（1/3宽） -->
+<div class="project-card bg-white border border-border rounded-sm overflow-hidden">
+<div class="aspect-[4/3] border-b border-border">
+<div class="project-cover cover-guangzhou w-full h-full">
+<div class="cover-tag">Project 02 · INTERNATIONAL COMMUNICATION</div>
+<div class="cover-title">Guangzhou International Award for Urban Innovation<br/>Global Communications</div>
+<div class="cover-meta">2026</div>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-3">
+<span class="text-xs font-medium text-accent">Project 02 · International Communication</span>
+<span class="text-xs text-muted">2026</span>
+</div>
+<h3 class="font-serif text-xl font-bold mb-3 text-primary">Global Communications for the Guangzhou International Award for Urban Innovation</h3>
+<p class="text-secondary/80 mb-4 leading-relaxed">Managed domestic and international media channels for the 7th Guangzhou Award International Conference, wrote six bilingual press releases, and coordinated with global media and multilateral institutions to communicate Chinese urban governance experience internationally.</p>
+<a class="text-primary font-medium inline-flex items-center gap-2 hover:text-accent transition-colors" href="project2-guangzhouaward-en.html">
+                            View Project <i class="fa fa-long-arrow-right"></i>
+</a>
+</div>
+</div>
+<!-- 项目3：南方财经国际传播（1/3宽） -->
+<div class="project-card bg-white border border-border rounded-sm overflow-hidden">
+<div class="aspect-[4/3] border-b border-border">
+<div class="project-cover cover-southern w-full h-full">
+<div class="cover-tag">Project 03 · MEDIA &amp; COMMUNICATION</div>
+<div class="cover-title">Southern Finance Omnimedia Group<br/>International Communication Project</div>
+<div class="cover-meta">2025</div>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-3">
+<span class="text-xs font-medium text-accent">Project 03 · Financial Media</span>
+<span class="text-xs text-muted">2025</span>
+</div>
+<h3 class="font-serif text-xl font-bold mb-3 text-primary">International Communication at Southern Finance Omnimedia Group</h3>
+<p class="text-secondary/80 mb-4 leading-relaxed">Co-authored a front-page analytical report for the 21st Century Business Herald, planned content for the “Vibrant Streets of Thailand” video series, researched over 100 Southeast Asian KOLs, and built an international student community of 70 members.</p>
+<a class="text-primary font-medium inline-flex items-center gap-2 hover:text-accent transition-colors" href="project3-southernfinance-en.html">
+                            View Project <i class="fa fa-long-arrow-right"></i>
+</a>
+</div>
+</div>
+<!-- 项目4：全球治理学术研究（1/3宽） -->
+<div class="project-card bg-white border border-border rounded-sm overflow-hidden">
+<div class="aspect-[4/3] border-b border-border">
+<div class="project-cover cover-research w-full h-full">
+<div class="cover-tag">Project 04 · ACADEMIC RESEARCH</div>
+<div class="cover-title">Global Governance &amp;<br/>Digital Economy Research</div>
+<div class="cover-meta">2025 – 2026</div>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-3">
+<span class="text-xs font-medium text-accent">Project 04 · Academic Research</span>
+<span class="text-xs text-muted">2025 – 2026</span>
+</div>
+<h3 class="font-serif text-xl font-bold mb-3 text-primary">Global Governance &amp; Digital Economy Research</h3>
+<p class="text-secondary/80 mb-4 leading-relaxed">Four research and entrepreneurship projects: the China–U.S. Youth Dialogue on Southeast Asia at Sun Yat-sen University; the Global Youth Social Science Forum at CUHK-Shenzhen; research on global justice and financial crises at Cambridge; and the national-level “Qingqing Ziqin, Shouyi Jiangxin” student entrepreneurship project.</p>
+<a class="text-primary font-medium inline-flex items-center gap-2 hover:text-accent transition-colors" href="project4-research-en.html">
+                            View Project <i class="fa fa-long-arrow-right"></i>
+</a>
+</div>
+</div>
+<!-- 项目5：校团委学生工作（2/3宽） -->
+<div class="project-card md:col-span-2 bg-white border border-border rounded-sm overflow-hidden">
+<div class="aspect-[16/9] border-b border-border">
+<div class="project-cover cover-youth w-full h-full">
+<div class="cover-tag">Project 05 · STUDENT LEADERSHIP</div>
+<div class="cover-title">Campus Public Affairs &amp;<br/>Youth Engagement</div>
+<div class="cover-meta">2023 – 2026</div>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-3">
+<span class="text-xs font-medium text-accent">Project 05 · Student Leadership</span>
+<span class="text-xs text-muted">2023 – 2026</span>
+</div>
+<h3 class="font-serif text-xl font-bold mb-3 text-primary">Campus Public Affairs &amp; Youth Engagement</h3>
+<p class="text-secondary/80 mb-4 leading-relaxed">As Deputy Secretary of the University Youth League Committee, oversaw over 100 student organizations and supported event planning, communications and social practice programs. Led or contributed to major campus events and rural outreach projects, producing posters, articles and videos while developing large-scale event and cross-departmental coordination skills.</p>
+<a class="text-primary font-medium inline-flex items-center gap-2 hover:text-accent transition-colors" href="project5-youthleague-en.html">
+                            View Project <i class="fa fa-long-arrow-right"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 职业经历 -->
+<section class="section-padding bg-white/50 border-t border-border" id="experience">
+<div class="container-custom">
+<div class="mb-12">
+<p class="text-accent font-medium mb-3 text-sm tracking-wide">Experience</p>
+<h2 class="font-serif text-3xl md:text-4xl font-bold text-primary">Experience</h2>
+</div>
+<div class="space-y-0">
+<!-- 网易有道 -->
+<div class="border-l-2 border-primary/20 pl-8 pb-12 relative">
+<div class="absolute w-4 h-4 bg-primary rounded-full -left-[9px] top-1"></div>
+<div class="flex flex-wrap justify-between gap-2 mb-2">
+<h3 class="font-serif text-xl font-bold text-primary">Government Affairs Intern</h3>
+<span class="text-sm text-muted">Sep 2026 – Present</span>
+</div>
+<p class="text-lg font-medium text-secondary mb-3">NetEase Youdao</p>
+<ul class="text-secondary/80 space-y-2 leading-relaxed">
+<li>• Track national and provincial AI policy frameworks and assess their implications for enterprise AI compliance and strategic planning.</li>
+<li>• Draft national “AI+” program applications for flagship products, including Youdao AI Earphones and the Digital Industrial Base, consolidating IP, patents and technical qualifications.</li>
+<li>• Monitor user complaint records and municipal regulatory feedback in Guangzhou and Hangzhou to mitigate compliance risks and support alignment with local governance standards.</li>
+</ul>
+</div>
+<!-- 广州奖 -->
+<div class="border-l-2 border-primary/20 pl-8 pb-12 relative">
+<div class="absolute w-4 h-4 bg-primary/60 rounded-full -left-[9px] top-1"></div>
+<div class="flex flex-wrap justify-between gap-2 mb-2">
+<h3 class="font-serif text-xl font-bold text-primary">International Communication Intern</h3>
+<span class="text-sm text-muted">2026.05 – 2026.08</span>
+</div>
+<p class="text-lg font-medium text-secondary mb-3">Secretariat of the Guangzhou International Award for Urban Innovation</p>
+<ul class="text-secondary/80 space-y-2 leading-relaxed">
+<li>• Manage Instagram, Facebook, X, WeChat and Weibo channels; produce six bilingual press releases, ten social posts and three promotional videos.</li>
+<li>• Coordinate publicity for the 7th Guangzhou Award International Conference, working with multilateral partners and global media to facilitate policy knowledge exchange between cities.</li>
+<li>• Analyze global urban governance cases and present local sustainability practices through frameworks aligned with the UN Sustainable Development Goals.</li>
+</ul>
+</div>
+<!-- 工信部电子五所 -->
+<div class="border-l-2 border-primary/20 pl-8 pb-12 relative">
+<div class="absolute w-4 h-4 bg-primary/40 rounded-full -left-[9px] top-1"></div>
+<div class="flex flex-wrap justify-between gap-2 mb-2">
+<h3 class="font-serif text-xl font-bold text-primary">Public Affairs &amp; Corporate Communications Intern</h3>
+<span class="text-sm text-muted">2026.01 – 2026.02</span>
+</div>
+<p class="text-lg font-medium text-secondary mb-3">CEPREI, Ministry of Industry and Information Technology</p>
+<ul class="text-secondary/80 space-y-2 leading-relaxed">
+<li>• Support the planning and delivery of large-scale organizational events, coordinating cross-departmental logistics and vendor negotiations for over 300 participants.</li>
+<li>• Write strategic communications and analytical features on major national economic and governance policies, improving communication across internal and digital channels.</li>
+<li>• Maintain a database of over 500 personnel records and standardize policy and compliance documentation from 2018–2025, improving policy retrieval efficiency by 90%.</li>
+</ul>
+</div>
+<!-- 南方财经 -->
+<div class="border-l-2 border-primary/20 pl-8 relative">
+<div class="absolute w-4 h-4 bg-primary/20 rounded-full -left-[9px] top-1"></div>
+<div class="flex flex-wrap justify-between gap-2 mb-2">
+<h3 class="font-serif text-xl font-bold text-primary">International Communication Intern</h3>
+<span class="text-sm text-muted">2025.08 – 2025.11</span>
+</div>
+<p class="text-lg font-medium text-secondary mb-3">Southern Finance Omnimedia Group</p>
+<ul class="text-secondary/80 space-y-2 leading-relaxed">
+<li>• Co-author a front-page report on Chinese EV expansion in Latin America for the 21st Century Business Herald and plan related video content.</li>
+<li>• Analyze Southeast Asian KOL audiences on TikTok and Instagram, building cross-border communication channels for the “ASEAN Trends” initiative.</li>
+<li>• Found and manage an international student network of over 70 members, organizing cross-cultural exchange forums and digital economy workshops.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- 核心能力 -->
+<section class="section-padding border-t border-border" id="skills">
+<div class="container-custom">
+<div class="mb-12">
+<p class="text-accent font-medium mb-3 text-sm tracking-wide">Skills</p>
+<h2 class="font-serif text-3xl md:text-4xl font-bold text-primary">Core Competencies</h2>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="bg-white p-6 border border-border rounded-sm">
+<div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-4">
+<i class="fa fa-line-chart"></i>
+</div>
+<h3 class="font-serif text-lg font-bold mb-3 text-primary">Policy Research &amp; Implementation</h3>
+<ul class="text-secondary/80 space-y-2 text-sm leading-relaxed">
+<li>• AI and technology policy tracking and impact assessment</li>
+<li>• International governance and urban policy case studies</li>
+<li>• Fieldwork and qualitative research methods</li>
+<li>• Economic and financial policy analysis</li>
+</ul>
+<p class="text-xs text-muted mt-4 pt-3 border-t border-border">
+                        Evidence: NetEase Youdao AI policy reports; Cambridge global governance research; over 200 field interviews in Ruyuan.
+                    </p>
+</div>
+<div class="bg-white p-6 border border-border rounded-sm">
+<div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-4">
+<i class="fa fa-comments"></i>
+</div>
+<h3 class="font-serif text-lg font-bold mb-3 text-primary">International Communication</h3>
+<ul class="text-secondary/80 space-y-2 text-sm leading-relaxed">
+<li>• Chinese–English content creation: press releases, reports and social media</li>
+<li>• International social media management: Instagram, Facebook, X and TikTok</li>
+<li>• Cross-cultural communication planning and KOL collaboration</li>
+<li>• Video content planning and production</li>
+</ul>
+<p class="text-xs text-muted mt-4 pt-3 border-t border-border">
+                        Evidence: Guangzhou Award global communications; a Southern Finance front-page report; six bilingual press releases.
+                    </p>
+</div>
+<div class="bg-white p-6 border border-border rounded-sm">
+<div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-4">
+<i class="fa fa-users"></i>
+</div>
+<h3 class="font-serif text-lg font-bold mb-3 text-primary">Project Coordination</h3>
+<ul class="text-secondary/80 space-y-2 text-sm leading-relaxed">
+<li>• End-to-end coordination of major conferences and events</li>
+<li>• Cross-departmental and cross-cultural stakeholder coordination</li>
+<li>• Student team and community management</li>
+<li>• Compliance and data management</li>
+</ul>
+<p class="text-xs text-muted mt-4 pt-3 border-t border-border">
+                        Evidence: Guangzhou Award conference coordination; a 300-person event at CEPREI; oversight of over 100 student organizations.
+                    </p>
+</div>
+<div class="bg-white p-6 border border-border rounded-sm">
+<div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-4">
+<i class="fa fa-language"></i>
+</div>
+<h3 class="font-serif text-lg font-bold mb-3 text-primary">Languages &amp; Tools</h3>
+<ul class="text-secondary/80 space-y-2 text-sm leading-relaxed">
+<li>• English: IELTS 7.0; professional and academic proficiency</li>
+<li>• Cantonese and Mandarin: native</li>
+<li>• Microsoft Office and collaborative documentation</li>
+<li>• Video editing, social media formatting and basic data analysis</li>
+</ul>
+<p class="text-xs text-muted mt-4 pt-3 border-t border-border">
+                        Evidence: English-language conference presentations and bilingual content production.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 关于我 -->
+<section class="section-padding bg-white/50 border-t border-border" id="about">
+<div class="container-custom grid md:grid-cols-5 gap-12 items-start">
+<div class="md:col-span-2"><figure style="margin:0;width:100%;"><img alt="柯月怡在香港中文大学（深圳）全球青年社科论坛现场" loading="lazy" src="assets/project-photos/cuhk-forum-portrait.jpg" style="display:block;width:100%;height:auto;aspect-ratio:1200/810;object-fit:contain;border-radius:4px;border:1px solid #e2e8f0;"/></figure></div>
+<div class="md:col-span-3">
+<p class="text-accent font-medium mb-3 text-sm tracking-wide">About Me</p>
+<h2 class="font-serif text-3xl md:text-4xl font-bold text-primary mb-6">My Story</h2>
+<div class="mb-6">
+<a class="inline-flex items-center gap-2 text-primary hover:text-accent transition-colors font-medium" href="life-en.html">
+                        Explore Life Beyond Work <i class="fa fa-long-arrow-right"></i>
+</a>
+</div>
+<div class="space-y-4 text-secondary/80 leading-relaxed text-lg">
+<p>As the top-ranked student in my International Politics program, I have explored the intersection of policy research and international communication through practice rather than following a purely academic path.</p>
+<p>My experience ranges from representing Malaysia in ASEAN digital economy negotiations at academic conferences and conducting over 200 interviews on intangible cultural heritage in rural northern Guangdong, to writing front-page coverage of Chinese companies going global. I then worked on global communications at the Guangzhou Award and now focus on AI policy research at NetEase Youdao.</p>
+<p>Being a bridge builder connects my experiences: bridging academia and practice, China and the world, and policy and the public. Overseeing more than 100 student organizations strengthened my coordination skills, while cross-sector internships developed my capabilities across policy research, content production and cross-cultural communication. I work with both policy language and public-facing narratives, combining rigorous analysis with accessible communication.</p>
+</div>
+<div class="mt-10 grid grid-cols-2 gap-6">
+<div>
+<h4 class="font-bold text-primary mb-3">Education</h4>
+<p class="text-secondary/80">Guangdong University of Foreign Studies<br/>Bachelor of Laws in International Politics (2023–2027)<br/>GPA 3.96/4.0 · Ranked 1/31<br/>National Scholarship Recipient</p>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-3">Awards &amp; Honors</h4>
+<p class="text-secondary/80">National Scholarship<br/>“Challenge Cup” Silver &amp; Bronze Awards<br/>“Colorful Countryside” Provincial Bronze Award<br/>“Outstanding Participant,” Sun Yat-sen University ASEAN Program</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 联系 -->
+<section class="section-padding border-t border-border" id="contact">
+<div class="container-custom max-w-2xl text-center">
+<p class="text-accent font-medium mb-3 text-sm tracking-wide">Get In Touch</p>
+<h2 class="font-serif text-3xl md:text-4xl font-bold text-primary mb-6">Get in Touch</h2>
+<p class="text-lg text-secondary/80 mb-8 leading-relaxed">For collaboration opportunities, ideas to exchange, or simply to say hello, please feel free to get in touch.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center mb-10">
+<a class="bg-primary text-white px-6 py-3 rounded font-medium hover:bg-primary/90 transition-colors inline-flex items-center justify-center gap-2" href="mailto:13538836022@163.com">
+<i class="fa fa-envelope"></i> Send Email
+                </a>
+<a class="border border-primary text-primary px-6 py-3 rounded font-medium hover:bg-primary/5 transition-colors inline-flex items-center justify-center gap-2" download="Yueyi_Ke_CV_EN.pdf" href="assets/cv/yueyi-ke-cv-en.pdf">
+<i class="fa fa-download"></i> Download Full CV
+                </a>
+</div>
+<div class="flex justify-center gap-6 text-xl text-muted">
+<a class="hover:text-primary transition-colors" href="tel:13538336022"><i class="fa fa-phone"></i></a>
+</div>
+<p class="mt-10 text-sm text-muted">© 2026 Yueyi Ke. All rights reserved.</p>
+</div>
+</section>
+<script>
+        // 图片灯箱功能
+        function openLightbox(src) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+        // 点击背景关闭
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) closeLightbox();
+        });
+        // ESC键关闭
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeLightbox();
+        });
+        // 初始化所有可点击图片
+        document.addEventListener('DOMContentLoaded', function() {
+            const imgs = document.querySelectorAll('.img-container img');
+            imgs.forEach(img => {
+                img.parentElement.addEventListener('click', () => openLightbox(img.src));
+            });
+
+            // 滚动淡入动画
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.add('fade-in');
+                observer.observe(section);
+            });
+
+            // 回到顶部按钮
+            const backToTopBtn = document.createElement('div');
+            backToTopBtn.className = 'back-to-top';
+            backToTopBtn.innerHTML = '<i class="fa fa-arrow-up"></i>';
+            backToTopBtn.onclick = () => window.scrollTo({top: 0, behavior: 'smooth'});
+            document.body.appendChild(backToTopBtn);
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 500) {
+                    backToTopBtn.classList.add('visible');
+                } else {
+                    backToTopBtn.classList.remove('visible');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
