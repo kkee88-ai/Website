@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>柯月怡 | 个人作品集</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Noto+Serif+SC:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="assets/interactions.css" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0A2463',
+                        secondary: '#2D3748',
+                        accent: '#3E92CC',
+                        background: '#FFFFFF',
+                        muted: '#718096',
+                        border: '#E2E8F0'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        serif: ['Noto Serif SC', 'Georgia', 'serif']
+                    },
+                }
+            }
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer utilities {
+            .text-balance {
+                text-wrap: balance;
+            }
+            .section-padding {
+                padding: clamp(3rem, 8vw, 7rem) 0;
+            }
+            .container-custom {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 clamp(1.5rem, 5vw, 3rem);
+            }
+        }
+    </style>
+<style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+<link href="assets/covers.css" rel="stylesheet"/><link href="assets/final-polish.css" rel="stylesheet"/></head>
+<body class="font-sans antialiased">
+<!-- 图片灯箱 -->
+<div class="lightbox" id="lightbox">
+<span class="close-btn" onclick="closeLightbox()"><i class="fa fa-times"></i></span>
+<img alt="放大查看" id="lightbox-img" src=""/>
+</div>
+<!-- 导航 -->
+<nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-sm border-b border-border/60">
+<div class="container-custom flex justify-between items-center h-16">
+<a class="font-serif font-bold text-xl text-primary" href="#home">柯月怡</a>
+<div class="hidden md:flex items-center gap-8 text-sm font-medium">
+<a class="hover:text-accent transition-colors" href="#work">代表项目</a>
+<a class="hover:text-accent transition-colors" href="#experience">职业经历</a>
+<a class="hover:text-accent transition-colors" href="#skills">核心能力</a>
+<a class="hover:text-accent transition-colors" href="#about">关于我</a>
+<a class="hover:text-accent transition-colors" href="#contact">联系</a>
+<a class="text-muted hover:text-primary transition-colors" href="作品集-英文.html">EN</a>
+<a class="bg-primary text-white px-4 py-2 rounded hover:bg-primary/90 transition-colors" download="柯月怡简历-中文版.pdf" href="assets/cv/yueyi-ke-cv-zh.pdf">下载简历</a>
+</div>
+<button class="md:hidden text-xl">
+<i class="fa fa-bars"></i>
+</button>
+</div>
+</nav>
+<!-- 首页 Hero -->
+<section class="pt-32 pb-20 md:pt-44 md:pb-28" id="home">
+<div class="container-custom grid md:grid-cols-2 gap-12 items-center">
+<div class="order-2 md:order-1">
+<p class="text-accent font-medium mb-3 text-sm tracking-wide">你好，我是</p>
+<h1 class="font-serif text-[clamp(2.5rem,6vw,4rem)] font-bold leading-[1.1] text-primary mb-4">柯月怡</h1>
+<h2 class="text-xl md:text-2xl font-medium text-secondary mb-6">政府事务 · 国际传播 · 科技政策</h2>
+<p class="text-lg text-secondary/80 leading-relaxed mb-8 max-w-xl text-balance">跨领域桥接者：打通政策研究、内容生产与跨文化传播全链条，让政策被产业理解，让中国故事被世界看见，让复杂信息流动产生实际价值。</p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-primary text-white px-6 py-3 rounded font-medium hover:bg-primary/90 transition-colors" href="#work">查看项目</a>
+<a class="border border-primary text-primary px-6 py-3 rounded font-medium hover:bg-primary/5 transition-colors" href="#about">了解更多</a>
+</div>
+</div>
+<div class="order-1 md:order-2 flex justify-center">
+<!-- 证件照缩小 -->
+<div class="aspect-[4/5] w-64 rounded-xl overflow-hidden border border-border shadow-xl">
+<img alt="柯月怡证件照" class="w-full h-full object-cover" src="assets/portrait.jpg"/>
+</div>
+</div>
+</div>
+</section>
+<!-- 简介预览 -->
+<section class="py-16 border-t border-border">
+<div class="container-custom max-w-3xl">
+<p class="text-accent font-medium mb-3 text-sm tracking-wide">关于我</p>
+<p class="text-xl md:text-2xl leading-relaxed text-secondary/90 font-light">
+                广东外语外贸大学国际政治专业排名第一（GPA 3.96/4.0，国家奖学金获得者），现就职于网易有道政府事务部，聚焦AI政策研究、科技合规与国际传播。拥有国际组织、财经媒体、公共政策部门多段实践经验，擅长政策分析、双语内容创作与跨文化项目协调。
+            </p>
+</div>
+</section>
+<!-- 代表项目 -->
+<section class="section-padding border-t border-border" id="work">
+<div class="container-custom">
+<div class="mb-12">
+<p class="text-accent font-medium mb-3 text-sm tracking-wide">Selected Work</p>
+<h2 class="font-serif text-3xl md:text-4xl font-bold text-primary">代表项目</h2>
+</div>
+<!-- 非对称项目网格 -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- 项目1：网易有道GR（2/3宽） -->
+<div class="project-card md:col-span-2 bg-white border border-border rounded-sm overflow-hidden">
+<div class="aspect-[16/9] border-b border-border">
+<div class="project-cover cover-youdao w-full h-full">
+<div class="cover-tag">Project 01 · GOVERNMENT AFFAIRS</div>
+<div class="cover-title">网易有道AI政策研究<br/>与国家级项目申报</div>
+<div class="cover-meta">2026 – Present</div>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-3">
+<span class="text-xs font-medium text-accent">Project 01 · 政府事务</span>
+<span class="text-xs text-muted">2026 – 至今</span>
+</div>
+<h3 class="font-serif text-xl font-bold mb-3 text-primary">网易有道AI政策研究与国家级项目申报</h3>
+<p class="text-secondary/80 mb-4 leading-relaxed">跟踪国家及省级AI政策框架，开展政策影响评估为企业AI产品合规提供支撑；牵头撰写有道AI耳机、数字产业基地"AI+"国家级项目申报方案，整合知识产权、专利与技术资质；负责广州、杭州两地合规风险监测与监管投诉处理，保障业务合规运行。</p>
+<a class="text-primary font-medium inline-flex items-center gap-2 hover:text-accent transition-colors" href="project1-youdao.html">
+                            查看详情 <i class="fa fa-long-arrow-right"></i>
+</a>
+</div>
+</div>
+<!-- 项目2：广州国际城市创新奖（1/3宽） -->
+<div class="project-card bg-white border border-border rounded-sm overflow-hidden">
+<div class="aspect-[4/3] border-b border-border">
+<div class="project-cover cover-guangzhou w-full h-full">
+<div class="cover-tag">Project 02 · INTERNATIONAL COMMUNICATION</div>
+<div class="cover-title">广州国际城市创新奖<br/>全球传播</div>
+<div class="cover-meta">2026</div>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-3">
+<span class="text-xs font-medium text-accent">Project 02 · 国际传播</span>
+<span class="text-xs text-muted">2026</span>
+</div>
+<h3 class="font-serif text-xl font-bold mb-3 text-primary">广州国际城市创新奖全球传播</h3>
+<p class="text-secondary/80 mb-4 leading-relaxed">负责第七届广州奖国际会议国内外全媒体矩阵运营，撰写6篇中英双语新闻稿，对接全球媒体与多边机构，推动中国城市治理经验国际传播，</p>
+<a class="text-primary font-medium inline-flex items-center gap-2 hover:text-accent transition-colors" href="project2-guangzhouaward.html">
+                            查看详情 <i class="fa fa-long-arrow-right"></i>
+</a>
+</div>
+</div>
+<!-- 项目3：南方财经国际传播（1/3宽） -->
+<div class="project-card bg-white border border-border rounded-sm overflow-hidden">
+<div class="aspect-[4/3] border-b border-border">
+<div class="project-cover cover-southern w-full h-full">
+<div class="cover-tag">Project 03 · MEDIA &amp; COMMUNICATION</div>
+<div class="cover-title">南方财经全媒体集团<br/>国际传播项目</div>
+<div class="cover-meta">2025</div>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-3">
+<span class="text-xs font-medium text-accent">Project 03 · 财经媒体</span>
+<span class="text-xs text-muted">2025</span>
+</div>
+<h3 class="font-serif text-xl font-bold mb-3 text-primary">南方财经全媒体集团国际传播项目</h3>
+<p class="text-secondary/80 mb-4 leading-relaxed">合作撰写《21世纪经济报道》头版分析报道，策划"泰国街巷风情"系列视频内容，开展100+位东南亚KOL传播研究，搭建70人国际学生交流社群。</p>
+<a class="text-primary font-medium inline-flex items-center gap-2 hover:text-accent transition-colors" href="project3-southernfinance.html">
+                            查看详情 <i class="fa fa-long-arrow-right"></i>
+</a>
+</div>
+</div>
+<!-- 项目4：全球治理学术研究（1/3宽） -->
+<div class="project-card bg-white border border-border rounded-sm overflow-hidden">
+<div class="aspect-[4/3] border-b border-border">
+<div class="project-cover cover-research w-full h-full">
+<div class="cover-tag">Project 04 · ACADEMIC RESEARCH</div>
+<div class="cover-title">全球治理与<br/>数字经济研究</div>
+<div class="cover-meta">2025 – 2026</div>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-3">
+<span class="text-xs font-medium text-accent">Project 04 · 学术研究</span>
+<span class="text-xs text-muted">2025 – 2026</span>
+</div>
+<h3 class="font-serif text-xl font-bold mb-3 text-primary">全球治理与数字经济系列研究</h3>
+<p class="text-secondary/80 mb-4 leading-relaxed">四个研究与创业子项目：中山大学中美青年对话东南亚项目、港中大（深圳）全球青年社科论坛、剑桥大学全球正义与金融危机研究，以及“青青子勤，守艺匠心”国家级大学生创业项目。</p>
+<a class="text-primary font-medium inline-flex items-center gap-2 hover:text-accent transition-colors" href="project4-research.html">
+                            查看详情 <i class="fa fa-long-arrow-right"></i>
+</a>
+</div>
+</div>
+<!-- 项目5：校团委学生工作（2/3宽） -->
+<div class="project-card md:col-span-2 bg-white border border-border rounded-sm overflow-hidden">
+<div class="aspect-[16/9] border-b border-border">
+<div class="project-cover cover-youth w-full h-full">
+<div class="cover-tag">Project 05 · STUDENT LEADERSHIP</div>
+<div class="cover-title">校园公共事务与<br/>青年工作实践</div>
+<div class="cover-meta">2023 – 2026</div>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-3">
+<span class="text-xs font-medium text-accent">Project 05 · 学生工作</span>
+<span class="text-xs text-muted">2023 – 2026</span>
+</div>
+<h3 class="font-serif text-xl font-bold mb-3 text-primary">校园公共事务与青年工作实践</h3>
+<p class="text-secondary/80 mb-4 leading-relaxed">担任校团委副书记期间，统筹管理全校100+学生组织，负责活动策划、宣传内容生产、社会实践组织，主导/参与多场大型校园活动、三下乡实践项目，产出海报、推文、视频等多类宣传作品，锻炼了大型活动统筹与跨部门协调能力。</p>
+<a class="text-primary font-medium inline-flex items-center gap-2 hover:text-accent transition-colors" href="project5-youthleague.html">
+                            查看详情 <i class="fa fa-long-arrow-right"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 职业经历 -->
+<section class="section-padding bg-white/50 border-t border-border" id="experience">
+<div class="container-custom">
+<div class="mb-12">
+<p class="text-accent font-medium mb-3 text-sm tracking-wide">Experience</p>
+<h2 class="font-serif text-3xl md:text-4xl font-bold text-primary">职业经历</h2>
+</div>
+<div class="space-y-0">
+<!-- 网易有道 -->
+<div class="border-l-2 border-primary/20 pl-8 pb-12 relative">
+<div class="absolute w-4 h-4 bg-primary rounded-full -left-[9px] top-1"></div>
+<div class="flex flex-wrap justify-between gap-2 mb-2">
+<h3 class="font-serif text-xl font-bold text-primary">政府事务实习生</h3>
+<span class="text-sm text-muted">2026.09 – 至今</span>
+</div>
+<p class="text-lg font-medium text-secondary mb-3">网易有道</p>
+<ul class="text-secondary/80 space-y-2 leading-relaxed">
+<li>• 跟踪国家及省级AI政策框架，开展政策影响评估，为企业AI产品合规和战略布局提供支撑</li>
+<li>• 撰写有道AI耳机、数字产业基地等核心产品"AI+"国家级项目申报方案，整合知识产权、专利与技术资质</li>
+<li>• 监测广州、杭州两地用户投诉台账和市政监管反馈，化解合规风险，保障业务符合地方治理标准</li>
+</ul>
+</div>
+<!-- 广州奖 -->
+<div class="border-l-2 border-primary/20 pl-8 pb-12 relative">
+<div class="absolute w-4 h-4 bg-primary/60 rounded-full -left-[9px] top-1"></div>
+<div class="flex flex-wrap justify-between gap-2 mb-2">
+<h3 class="font-serif text-xl font-bold text-primary">国际传播实习生</h3>
+<span class="text-sm text-muted">2026.05 – 2026.08</span>
+</div>
+<p class="text-lg font-medium text-secondary mb-3">广州国际城市创新奖秘书处</p>
+<ul class="text-secondary/80 space-y-2 leading-relaxed">
+<li>• 运营Instagram、Facebook、X、微信、微博等国内外媒体矩阵，撰写6篇中英双语新闻稿、10条社交帖文、3支宣传视频</li>
+<li>• 统筹第七届广州奖国际会议宣传工作，对接多边合作伙伴和全球媒体，推动城市间政策知识转移</li>
+<li>• 研究全球城市治理案例，将地方可持续发展经验转化为符合联合国SDGs框架的分析内容</li>
+</ul>
+</div>
+<!-- 工信部电子五所 -->
+<div class="border-l-2 border-primary/20 pl-8 pb-12 relative">
+<div class="absolute w-4 h-4 bg-primary/40 rounded-full -left-[9px] top-1"></div>
+<div class="flex flex-wrap justify-between gap-2 mb-2">
+<h3 class="font-serif text-xl font-bold text-primary">公共事务与企业传播实习生</h3>
+<span class="text-sm text-muted">2026.01 – 2026.02</span>
+</div>
+<p class="text-lg font-medium text-secondary mb-3">工业和信息化部电子第五研究所（CEPREI）</p>
+<ul class="text-secondary/80 space-y-2 leading-relaxed">
+<li>• 参与大型组织文化活动策划执行，统筹跨部门后勤、供应商谈判，支持300+参会者活动开展</li>
+<li>• 撰写国家重大经济/治理政策相关战略传播文案和专题分析文章，优化内部与数字渠道传播效果</li>
+<li>• 维护500+人员信息数据库，规范2018-2025年政策文档和合规文件，将政策查找效率提升90%</li>
+</ul>
+</div>
+<!-- 南方财经 -->
+<div class="border-l-2 border-primary/20 pl-8 relative">
+<div class="absolute w-4 h-4 bg-primary/20 rounded-full -left-[9px] top-1"></div>
+<div class="flex flex-wrap justify-between gap-2 mb-2">
+<h3 class="font-serif text-xl font-bold text-primary">国际传播实习生</h3>
+<span class="text-sm text-muted">2025.08 – 2025.11</span>
+</div>
+<p class="text-lg font-medium text-secondary mb-3">南方财经全媒体集团</p>
+<ul class="text-secondary/80 space-y-2 leading-relaxed">
+<li>• 合作撰写《21世纪经济报道》头版报道《中国电动车拉美扩张》，策划系列视频</li>
+<li>• 开展东南亚TikTok/Instagram KOL受众分析，为"东盟趋势"项目建立跨境传播渠道</li>
+<li>• 发起并运营70+成员国际学生网络，组织跨文化交流论坛和数字经济工作坊</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- 核心能力 -->
+<section class="section-padding border-t border-border" id="skills">
+<div class="container-custom">
+<div class="mb-12">
+<p class="text-accent font-medium mb-3 text-sm tracking-wide">Skills</p>
+<h2 class="font-serif text-3xl md:text-4xl font-bold text-primary">核心能力</h2>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="bg-white p-6 border border-border rounded-sm">
+<div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-4">
+<i class="fa fa-line-chart"></i>
+</div>
+<h3 class="font-serif text-lg font-bold mb-3 text-primary">政策研究与落地</h3>
+<ul class="text-secondary/80 space-y-2 text-sm leading-relaxed">
+<li>• AI/科技政策跟踪与影响评估</li>
+<li>• 国际治理/城市政策案例研究</li>
+<li>• 田野调查与定性研究方法</li>
+<li>• 经济金融政策分析</li>
+</ul>
+<p class="text-xs text-muted mt-4 pt-3 border-t border-border">
+                        证据：网易有道AI政策报告、剑桥大学全球治理研究、乳源200+份田野访谈
+                    </p>
+</div>
+<div class="bg-white p-6 border border-border rounded-sm">
+<div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-4">
+<i class="fa fa-comments"></i>
+</div>
+<h3 class="font-serif text-lg font-bold mb-3 text-primary">国际传播能力</h3>
+<ul class="text-secondary/80 space-y-2 text-sm leading-relaxed">
+<li>• 中英双语内容创作（新闻稿/报告/社媒）</li>
+<li>• 海外社交媒体运营（IG/FB/X/TikTok）</li>
+<li>• 跨文化传播策划与KOL合作</li>
+<li>• 视频内容策划与制作</li>
+</ul>
+<p class="text-xs text-muted mt-4 pt-3 border-t border-border">
+                        证据：广州奖全球传播项目、南方财经头版报道、6篇双语新闻稿
+                    </p>
+</div>
+<div class="bg-white p-6 border border-border rounded-sm">
+<div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-4">
+<i class="fa fa-users"></i>
+</div>
+<h3 class="font-serif text-lg font-bold mb-3 text-primary">项目统筹协调</h3>
+<ul class="text-secondary/80 space-y-2 text-sm leading-relaxed">
+<li>• 大型会议/活动全流程统筹</li>
+<li>• 跨部门/跨文化利益相关方协调</li>
+<li>• 学生团队/社群运营管理</li>
+<li>• 合规与数据管理</li>
+</ul>
+<p class="text-xs text-muted mt-4 pt-3 border-t border-border">
+                        证据：广州奖国际会议统筹、工信部300人活动执行、校团委100+组织管理
+                    </p>
+</div>
+<div class="bg-white p-6 border border-border rounded-sm">
+<div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-4">
+<i class="fa fa-language"></i>
+</div>
+<h3 class="font-serif text-lg font-bold mb-3 text-primary">语言与工具</h3>
+<ul class="text-secondary/80 space-y-2 text-sm leading-relaxed">
+<li>• 英语（IELTS 7.0，工作/学术流利）</li>
+<li>• 粤语、普通话（母语）</li>
+<li>• Office全家桶/文档协作</li>
+<li>• 视频剪辑/社媒排版/基础数据分析</li>
+</ul>
+<p class="text-xs text-muted mt-4 pt-3 border-t border-border">
+                        证据：全英文国际会议发言、双语内容产出
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 关于我 -->
+<section class="section-padding bg-white/50 border-t border-border" id="about">
+<div class="container-custom grid md:grid-cols-5 gap-12 items-start">
+<div class="md:col-span-2"><img alt="柯月怡在香港中文大学（深圳）全球青年社科论坛现场" loading="lazy" src="assets/project-photos/cuhk-forum-portrait.jpg" style="display:block;width:100%;height:auto;aspect-ratio:1895/1279;object-fit:contain;border-radius:4px;border:1px solid #e2e8f0"/></div>
+<div class="md:col-span-3">
+<p class="text-accent font-medium mb-3 text-sm tracking-wide">About Me</p>
+<h2 class="font-serif text-3xl md:text-4xl font-bold text-primary mb-6">我的故事</h2>
+<div class="mb-6">
+<a class="inline-flex items-center gap-2 text-primary hover:text-accent transition-colors font-medium" href="life.html">
+                        查看生活记录 <i class="fa fa-long-arrow-right"></i>
+</a>
+</div>
+<div class="space-y-4 text-secondary/80 leading-relaxed text-lg">
+<p>作为国际政治专业排名第一的学生，我没有走纯学术路线，而是在实践中不断探索「政策研究+国际传播」的交叉路径。</p>
+<p>从学术会议上代表马来西亚参与东盟数字经济谈判，到粤北乡村做200+份非遗保护田野访谈，再到财经媒体撰写中国企业出海的头版报道，之后进入广州国际城市创新奖把中国城市治理经验传播到全球，现在在网易有道专注于AI政策研究。</p>
+<p>我的成长始终围绕「桥接者」的核心定位：连接学术与实践，连接中国与世界，连接政策与公众。学生工作期间管理100+学生组织的经历锻炼了我的统筹协调能力，几段不同领域的实习让我打通了从政策研究、内容生产到跨文化传播的全链条能力——既懂政策语言，也懂传播语言，既能做严谨的学术分析，也能产出接地气的传播内容。</p>
+</div>
+<div class="mt-10 grid grid-cols-2 gap-6">
+<div>
+<h4 class="font-bold text-primary mb-3">教育背景</h4>
+<p class="text-secondary/80">广东外语外贸大学<br/>国际政治 法学学士（2023-2027）<br/>GPA 3.96/4.0 · 专业1/31<br/>国家奖学金获得者</p>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-3">荣誉奖项</h4>
+<p class="text-secondary/80">国家奖学金<br/>"挑战杯"银奖&amp;铜奖<br/>"多彩乡村"省级铜奖<br/>中山大学东盟项目"优秀参与者"</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 联系 -->
+<section class="section-padding border-t border-border" id="contact">
+<div class="container-custom max-w-2xl text-center">
+<p class="text-accent font-medium mb-3 text-sm tracking-wide">Get In Touch</p>
+<h2 class="font-serif text-3xl md:text-4xl font-bold text-primary mb-6">联系我</h2>
+<p class="text-lg text-secondary/80 mb-8 leading-relaxed">如果您有合作机会、交流想法或者只是想打个招呼，欢迎通过以下方式联系我。</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center mb-10">
+<a class="bg-primary text-white px-6 py-3 rounded font-medium hover:bg-primary/90 transition-colors inline-flex items-center justify-center gap-2" href="mailto:13538836022@163.com">
+<i class="fa fa-envelope"></i> 发送邮件
+                </a>
+<a class="border border-primary text-primary px-6 py-3 rounded font-medium hover:bg-primary/5 transition-colors inline-flex items-center justify-center gap-2" download="柯月怡简历-中文版.pdf" href="assets/cv/yueyi-ke-cv-zh.pdf">
+<i class="fa fa-download"></i> 下载完整简历
+                </a>
+</div>
+<div class="flex justify-center gap-6 text-xl text-muted">
+<a class="hover:text-primary transition-colors" href="tel:13538336022"><i class="fa fa-phone"></i></a>
+</div>
+<p class="mt-10 text-sm text-muted">© 2026 柯月怡. 保留所有权利。</p>
+</div>
+</section>
+<script>
+        // 图片灯箱功能
+        function openLightbox(src) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+        // 点击背景关闭
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) closeLightbox();
+        });
+        // ESC键关闭
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeLightbox();
+        });
+        // 初始化所有可点击图片
+        document.addEventListener('DOMContentLoaded', function() {
+            const imgs = document.querySelectorAll('.img-container img');
+            imgs.forEach(img => {
+                img.parentElement.addEventListener('click', () => openLightbox(img.src));
+            });
+
+            // 滚动淡入动画
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.add('fade-in');
+                observer.observe(section);
+            });
+
+            // 回到顶部按钮
+            const backToTopBtn = document.createElement('div');
+            backToTopBtn.className = 'back-to-top';
+            backToTopBtn.innerHTML = '<i class="fa fa-arrow-up"></i>';
+            backToTopBtn.onclick = () => window.scrollTo({top: 0, behavior: 'smooth'});
+            document.body.appendChild(backToTopBtn);
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 500) {
+                    backToTopBtn.classList.add('visible');
+                } else {
+                    backToTopBtn.classList.remove('visible');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
